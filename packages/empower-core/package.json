@@ -23,7 +23,7 @@
     "acorn": "^8.8.0",
     "buster-assertions": "^0.10.4",
     "escodegen": "^2.0.0",
-    "espower": "^2.0.0",
+    "espower": "^2.1.0",
     "mocha": "^10.2.0"
   },
   "directories": {
