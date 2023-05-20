@@ -1,7 +1,6 @@
 'use strict';
 
 var parser = require('acorn');
-require('acorn-es7-plugin')(parser);
 var estraverse = require('estraverse');
 var purifyAst = require('espurify').customize({extra: ['range']});
 
@@ -31,7 +30,6 @@ function parserOptions(tokens) {
         locations: true,
         ranges: false,
         onToken: tokens,
-        plugins: {asyncawait: true}
     };
 }
 

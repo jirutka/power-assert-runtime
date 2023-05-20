@@ -3,8 +3,6 @@
 var empower = require('..');
 var espower = require('espower');
 var acorn = require('acorn');
-var acornEs7Plugin = require('acorn-es7-plugin');
-acornEs7Plugin(acorn);
 var escodegen = require('escodegen');
 var baseAssert = require('assert');
 
@@ -21,7 +19,7 @@ var baseAssert = require('assert');
         if (patterns) {
             espowerOptions.patterns = patterns;
         }
-        var jsAST = acorn.parse(line, {ecmaVersion: 2018, locations: true, sourceType: 'module', sourceFile: filepath, plugins: {asyncawait: true}});
+        var jsAST = acorn.parse(line, {ecmaVersion: 2018, locations: true, sourceType: 'module', sourceFile: filepath});
         var espoweredAST = espower(jsAST, espowerOptions);
         return escodegen.generate(espoweredAST, {format: {compact: true}});
     };

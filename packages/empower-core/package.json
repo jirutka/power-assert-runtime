@@ -20,8 +20,7 @@
     "call-signature": "0.0.2"
   },
   "devDependencies": {
-    "acorn": "^5.0.0",
-    "acorn-es7-plugin": "^1.0.14",
+    "acorn": "^8.8.0",
     "buster-assertions": "^0.10.4",
     "escodegen": "^1.8.0",
     "espower": "^2.0.0",
