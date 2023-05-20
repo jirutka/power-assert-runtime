@@ -19,7 +19,7 @@
   "dependencies": {
     "acorn": "^8.8.0",
     "espurify": "^1.6.0",
-    "estraverse": "^4.2.0"
+    "estraverse": "^5.3.0"
   },
   "devDependencies": {
     "mocha": "^10.2.0"
