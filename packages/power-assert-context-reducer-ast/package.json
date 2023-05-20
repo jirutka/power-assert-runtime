@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "acorn": "^8.8.0",
-    "espurify": "^1.6.0",
+    "espurify": "^3.0.0",
     "estraverse": "^5.3.0"
   },
   "devDependencies": {
