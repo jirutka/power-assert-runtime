@@ -30,8 +30,10 @@
     "url": "https://github.com/twada/power-assert-runtime.git"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "lerna": "lerna",
     "test": "mocha --timeout 0 packages/*/test/*.js"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

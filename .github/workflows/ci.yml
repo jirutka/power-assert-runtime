@@ -20,7 +20,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # TODO: commit package-lock.json and replace with clean-install
       - run: npm install
-      - run: npm run bootstrap
       - run: npm run test
